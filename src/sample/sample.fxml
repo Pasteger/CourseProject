@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7F180D;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <Label fx:id="labelForArray1" layoutX="72.0" layoutY="48.0" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelForArray2" layoutX="491.0" layoutY="48.0" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMergedArray" layoutX="268.0" layoutY="233.0" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" textAlignment="CENTER" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonBubbleSort" layoutX="72.0" layoutY="493.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" text="Отсортировать массив 1" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonInsertionSort" layoutX="491.0" layoutY="493.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" text="Отсортировать массив 2" textAlignment="CENTER" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonForMergeArrays" layoutX="268.0" layoutY="321.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: #7F180D;" text="Слиять массивы" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textFieldForArray1" layoutX="72.0" layoutY="115.0" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: d7d7d7;">
+               <font>
+                  <Font name="Arial" size="28.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textFieldForArray2" layoutX="491.0" layoutY="115.0" prefHeight="67.0" prefWidth="264.0" style="-fx-background-color: d7d7d7;">
+               <font>
+                  <Font name="Arial" size="28.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttonEnter1" layoutX="72.0" layoutY="182.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="43.0" style="-fx-background-color: #7F180D;" text="Enter" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonEnter2" layoutX="712.0" layoutY="182.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="43.0" style="-fx-background-color: #7F180D;" text="Enter" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
