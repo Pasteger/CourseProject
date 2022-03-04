@@ -89,16 +89,9 @@ public class Controller {
         if (preArray.length() == 19){
             try {
                 String[] stringArray = preArray.split(" ");
-                array[0] = parseInt(stringArray[0]);
-                array[1] = parseInt(stringArray[1]);
-                array[2] = parseInt(stringArray[2]);
-                array[3] = parseInt(stringArray[3]);
-                array[4] = parseInt(stringArray[4]);
-                array[5] = parseInt(stringArray[5]);
-                array[6] = parseInt(stringArray[6]);
-                array[7] = parseInt(stringArray[7]);
-                array[8] = parseInt(stringArray[8]);
-                array[9] = parseInt(stringArray[9]);
+                for(int id = 0; id < 10; id++) {
+                    array[id] = parseInt(stringArray[id]);
+                }
                 return true;
             }
             catch (Exception exception){
