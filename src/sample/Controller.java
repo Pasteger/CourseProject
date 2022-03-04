@@ -1,11 +1,12 @@
 package sample;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static java.lang.Integer.parseInt;
 
@@ -17,36 +18,16 @@ public class Controller {
     static ArrayList<Integer> commonArray = new ArrayList<>();
     static boolean firstArrayFill = false;
     static boolean secondArrayFill = false;
-
-    @FXML
-    private Button buttonBubbleSort;
-
-    @FXML
-    private Button buttonForMergeArrays;
-
-    @FXML
-    private Button buttonInsertionSort;
-
-    @FXML
-    private Button buttonEnter1;
-
-    @FXML
-    private Button buttonEnter2;
-
-    @FXML
-    private Label labelForArray1;
-
-    @FXML
-    private Label labelForArray2;
-
-    @FXML
-    private Label labelMergedArray;
-
-    @FXML
-    private TextField textFieldForArray1;
-
-    @FXML
-    private TextField textFieldForArray2;
+    @FXML private Button buttonBubbleSort;
+    @FXML private Button buttonForMergeArrays;
+    @FXML private Button buttonInsertionSort;
+    @FXML private Button buttonEnter1;
+    @FXML private Button buttonEnter2;
+    @FXML private Label labelForArray1;
+    @FXML private Label labelForArray2;
+    @FXML private Label labelMergedArray;
+    @FXML private TextField textFieldForArray1;
+    @FXML private TextField textFieldForArray2;
 
     @FXML
     void initialize() {
@@ -163,13 +144,15 @@ public class Controller {
         if (firstArrayFill & secondArrayFill){
             commonArray.clear();
             int length = 10;
-            for (int index = 0; index < length; index++){
+            for (
+        int index = 0;
+        index < length;
+        index++){
                 if(!commonArray.contains(firstArray[index])) {
                     commonArray.add(firstArray[index]);
                 }
                 if(!commonArray.contains(secondArray[index])){
-                    commonArray.add(secondArray[index]);
-                }
+                    commonArray.add(secondArray[index]); }
             }
             String result = Arrays.toString(new ArrayList[]{commonArray});
             return result.substring(2, result.length()-2);
@@ -177,13 +160,5 @@ public class Controller {
         else {
             return "Нет массива";
         }
-    }
-
-    public static void setFirstArray(int[] firstArray) {
-        Controller.firstArray = firstArray;
-    }
-
-    public static void setSecondArray(int[] secondArray) {
-        Controller.secondArray = secondArray;
     }
 }

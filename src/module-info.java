@@ -4,6 +4,8 @@ module CourseProject {
     requires javafx.fxml;
     requires java.sql;
     requires org.junit.jupiter.api;
+    requires junit;
 
     opens sample;
+    opens test;
 }
